@@ -23,9 +23,6 @@ class EmailParser
   def parse
     new_parse = @emails.split(/[, ]/)
     parse = new_parse.reject { |elem| elem.empty? }
-
-   binding.pry 
-    return new_parse
   end 
   
 end 
