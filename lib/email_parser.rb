@@ -23,7 +23,7 @@ class EmailParser
     new_string = ""
     new_parse = @emails.split(/[, ]/)
       new_string = email.emails
-      new_parse = new_string.split(",")
+      new_parse = new_string.split(", ")
       new_string = new_parse[0] + "," + "\" \"" + new_parse[1]
 
     end 
