@@ -18,7 +18,7 @@ class EmailParser
   
   def parse
     new_parse = []
-    @@all.each do |email|
+    @@email.each do |email|
       new_string = email.emails
       new_parse = new_string.split(",")
       new_string = new_parse[0] + "," + "\" \"" + new_parse[1]
