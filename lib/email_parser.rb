@@ -20,9 +20,8 @@ class EmailParser
   end 
   
   def parse
-    new_parse = []
     new_string = ""
-    @emails.split
+    new_parse = @emails.split(/[, ]/)
       new_string = email.emails
       new_parse = new_string.split(",")
       new_string = new_parse[0] + "," + "\" \"" + new_parse[1]
