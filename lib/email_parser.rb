@@ -22,7 +22,7 @@ class EmailParser
   
   def parse
     new_parse = @emails.split(', ')
-
+   binding.pry 
     return new_parse
   end 
   
