@@ -7,22 +7,19 @@ class EmailParser
     attr_accessor :emails 
     
     @emails 
-    @@all = []
-    
-  def self.all
-    @@all
-  end
-  
-  
+ 
   def initialize(emails)
     @emails = emails 
-    @@all << self 
-    
   end 
   
   def parse
+    #split on , or whitespace
     new_parse = @emails.split(/[, ]/)
+    
+    #remove emtpy string 
     parse = new_parse.reject { |elem| elem.empty? }
+    
+    
   end 
   
 end 
