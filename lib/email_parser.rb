@@ -6,23 +6,18 @@ require 'pry'
 class EmailParser
     attr_accessor :emails 
     
-    @@all = []
     @emails 
-    
-  def self.all
-    @@all
-  end
+
   
   
   def initialize(emails)
     @emails = emails 
-    @@all << self 
+    
     
   end 
   
   def parse
     new_parse = []
-    new_string = ""
     @@all.each do |email|
       new_string = email.emails
       new_parse = new_string.split(",")
