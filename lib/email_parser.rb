@@ -19,6 +19,7 @@ class EmailParser
     #remove emtpy string 
     parse = new_parse.reject { |elem| elem.empty? }
     
+    #keep only unique 
     return parse.uniq 
   end 
   
